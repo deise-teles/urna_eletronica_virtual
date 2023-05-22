@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Urna Eletrônica</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+
+    <div id="container">
+      <!-- tela -->
+      <div id="item1">
+        <div id="tela">
+          <div id="displayOp">
+            <center><button id="opVotar"> Votar </button></center> <br/>
+            <center><button id="opResultado"> Resultado </button></center>
+          </div>
+
+          <div id="displayDados">
+            <div id="cadastroNT" style="padding: 10px">
+              <label id="lblNome"> Nome:</label>
+              <input id="nome" type="text" name="nome" placeholder="Digite seu nome" size=30> <br/><br/>
+            
+              <label id="lblTitulo"> Número do Título:</label>
+              <input id="titulo" type="number" name="tituloEleitor" placeholder="Digite seu nº de título" size=19>
+            </div>
+            <button id="passaPg"><i class="far fa-check-square"></i></button>
+          </div>
+
+          <div id = "displayVotar">
+           <div style="display: block">
+            &nbsp&nbsp&nbsp&nbsp&nbsp<div id="dig1"></div> 
+            <div id="dig2"></div>
+            <div id = "candidatoDigitado"> </div>
+           </div>
+           <div id="imagem"> </div>
+            <div id = "info">
+              <p> Aperte a tecla: </p>
+              <p><font color="green">CONFIRMA</font> para CONFIRMAR este voto </p>
+              <p><font color="red">CORRIGE</font> para REINICIAR este voto </p>
+            </div>
+          </div>
+
+          <div id="displayResult">
+            <div style="display: block">
+            <label>&nbsp&nbsp <font color="#000080" size=8> <b>Resultado das eleições</b></font> </label><br/><br/>
+            <div id="resultados" style = "margin: 10px"></div>
+            </div>
+          </div>
+          
+          <div id="displayFim" style="display: none">
+            <div id="fim">&nbspFIM</div>
+            <button id="passaPg2"><i class="fas fa-bars"></i></button>
+          </div>
+        </div>
+      </div>
+      <!-- botoes -->
+      <div id="item2">
+        <center><figure>
+          <img src="img/logo.jpg" width="200"/>
+        </figure></center>
+        <center> <div id="area">
+          <div id="b123">
+            <button class="num">1</button>&nbsp &nbsp &nbsp
+            <button class="num">2</button>&nbsp &nbsp &nbsp
+            <button class="num">3</button>
+          </div>
+          <div id="b456">
+            <button class="num">4</button>&nbsp &nbsp &nbsp
+            <button class="num">5</button>&nbsp &nbsp &nbsp
+            <button class="num">6</button> 
+          </div>
+          <div id="b789">
+            <button class="num">7</button>&nbsp &nbsp &nbsp
+            <button class="num">8</button>&nbsp &nbsp &nbsp
+            <button class="num">9</button>
+          </div>
+          <div>
+            <button class="num">0</button>
+          </div> 
+          <div>
+            <button id="bbranco"><b>Branco</b></button> 
+            <input type="reset" value="Corrige" id="bcorrige" style="font-weight: bold"></input>
+            <button id="bconfirma"><b>Confirma</b></button>
+          </div> 
+        </div> </center>
+      </div>
+    </div> 
+    <script src="https://kit.fontawesome.com/bdab1375cb.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
